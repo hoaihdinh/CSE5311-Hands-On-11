@@ -27,7 +27,8 @@ class RedBlackTree {
         void transplant(RedBlackNode *node1, RedBlackNode *node2);
         void left_rotate(RedBlackNode *node);
         void right_rotate(RedBlackNode *node);
-        void red_black_tree_fixup(RedBlackNode *node);
+        void red_black_insert_fixup(RedBlackNode *node);
+        void red_black_delete_fixup(RedBlackNode *node);
 
     public:
         RedBlackTree();
