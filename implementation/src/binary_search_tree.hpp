@@ -1,6 +1,12 @@
 #pragma once
 
-#include "bi_tree_node.hpp"
+struct BinaryTreeNode {
+    int key;
+    int data;
+    BinaryTreeNode *left;
+    BinaryTreeNode *right;
+    BinaryTreeNode *parent;
+};
 
 class BinarySearchTree {
     private:
@@ -13,7 +19,7 @@ class BinarySearchTree {
         BinaryTreeNode* get_successor_node(BinaryTreeNode *node);
         void rec_print_in_order(BinaryTreeNode *node);
         void rec_delete_tree(BinaryTreeNode *node);
-        void transplant(BinaryTreeNode *u, BinaryTreeNode *v);
+        void transplant(BinaryTreeNode *node1, BinaryTreeNode *node2);
         
     public:
         BinarySearchTree();
